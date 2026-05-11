@@ -424,8 +424,25 @@
         <h2 id="intake-title">Fill out the intake form.</h2>
         <p>This form opens inside the website so you do not have to leave the page. If it does not load, use the backup link below.</p>
       </div>
+      <!--
+        IMPORTANT:
+        Google Forms short links such as https://forms.gle/hcFHaVqoPvMcrN6X7 often do not load inside iframes.
+        To embed correctly, open your Google Form > Send > <> Embed, then copy only the src URL from Google's iframe code.
+        Paste that full URL below. It should look like:
+        https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true
+      -->
+      <div class="embed-notice" data-embed-notice>
+        <strong>Form embed setup needed:</strong>
+        Paste your Google Forms embed URL into the iframe <code>src</code> below. Until then, visitors can use the backup link under the form.
+      </div>
       <div class="iframe-wrap">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXYk1hsfcPN0gGVuvPPQnjsJNAcNz4NZizzshlN31asn3MLg/viewform?embedded=true" title="Modern IT Pathways intake form">Loading…</iframe>
+        <iframe
+          class="form-embed"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfXYk1hsfcPN0gGVuvPPQnjsJNAcNz4NZizzshlN31asn3MLg/viewform?embedded=true"
+          title="Modern IT Pathways intake form"
+          loading="lazy">
+          Loading…
+        </iframe>
       </div>
       <p class="modal-fallback">
         Trouble loading the form? <a href="https://forms.gle/hcFHaVqoPvMcrN6X7" target="_blank" rel="noopener">Open the intake form in a new tab</a>.
@@ -552,6 +569,11 @@
       modal.classList.add('is-open');
       modal.setAttribute('aria-hidden', 'false');
       document.body.classList.add('modal-open');
+      const formEmbed = modal.querySelector('.form-embed');
+      const embedNotice = modal.querySelector('[data-embed-notice]');
+      if (formEmbed && embedNotice && !formEmbed.src.includes('PASTE-YOUR-GOOGLE-FORM-EMBED-ID-HERE')) {
+        embedNotice.classList.add('hidden');
+      }
       const firstFocusable = modal.querySelector('button, a, input, iframe');
       if (firstFocusable) firstFocusable.focus();
     }
