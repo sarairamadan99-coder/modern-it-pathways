@@ -17,7 +17,7 @@
         <a href="#how-to-start">How to start</a>
         <a href="#accessibility">Pricing</a>
         <a href="#fit-call">Fit call</a>
-        <a href="#book" class="button small">Start with intake</a>
+        <button type="button" class="button small nav-button" data-open-intake>Get started</button>
       </div>
     </nav>
 
@@ -29,11 +29,12 @@
         stronger income potential, remote-friendly skills, and a clearer path into tech.
       </p>
       <div class="hero-actions">
-        <a href="https://forms.gle/hcFHaVqoPvMcrN6X7" class="button">Start with the intake form</a>
+        <button type="button" class="button" data-open-intake>Get started</button>
         <a href="#services" class="button secondary">View session options</a>
+        <button type="button" class="button ghost" data-open-quiz>Take the session finder quiz</button>
       </div>
       <p class="beta-note">
-        Start by filling out the intake form. I’ll review your responses and send the best next step based on your goals.
+        Start with the intake form if you already know what you want, or use the session finder quiz if you want help choosing.
       </p>
     </section>
   </header>
@@ -115,38 +116,41 @@
 
     <section id="how-to-start" class="section start-flow">
       <p class="eyebrow">How to start</p>
-      <h2>The intake form is the front door.</h2>
+      <h2>Choose a starting point, then fill out the intake form.</h2>
       <p class="section-lede">
-        Instead of asking you to guess which session is right, the intake form helps me understand where you are,
-        what you want help with, and which next step makes the most sense.
+        The session finder can help you decide which option may fit best. The intake form gives me the details I need to prepare and send the right next step.
       </p>
 
       <div class="flow-grid">
         <div class="flow-card">
           <span>1</span>
-          <h3>Fill out the intake form</h3>
-          <p>Share your background, goals, current questions, and whether you are interested in standard, community-rate, or pay-what-you-can pricing.</p>
+          <h3>Compare the options</h3>
+          <p>Review the three session options or take the quick session finder quiz if you are not sure where to start.</p>
         </div>
         <div class="flow-card">
           <span>2</span>
-          <h3>I review your responses</h3>
-          <p>I’ll look at what you shared and recommend the best next step based on where you are starting from.</p>
+          <h3>Fill out the intake form</h3>
+          <p>Share your background, goals, current questions, and whether standard, community-rate, or pay-what-you-can pricing feels realistic.</p>
         </div>
         <div class="flow-card">
           <span>3</span>
-          <h3>You receive the right booking link</h3>
-          <p>That may be a free 15-minute fit call, a Career Clarity Session, the Modern IT Starter Session, or the bundle.</p>
+          <h3>I send the next step</h3>
+          <p>I’ll review your intake and send the right payment link, scheduling details, or fit call option if we need to talk first.</p>
         </div>
       </div>
 
       <div class="center-action">
-        <a href="https://forms.gle/hcFHaVqoPvMcrN6X7" class="button">Complete the intake form</a>
+        <button type="button" class="button" data-open-intake>Get started</button>
+        <button type="button" class="button secondary" data-open-quiz>Not sure? Take the session finder quiz</button>
       </div>
     </section>
 
     <section id="services" class="section">
       <p class="eyebrow">Beta offers</p>
       <h2>Choose the support that matches where you are right now.</h2>
+      <p class="section-note">
+        You can choose the option that feels best for your goals, budget, and timing. If you are unsure, the session finder quiz can point you toward a starting place.
+      </p>
 
       <div class="cards three">
         <article class="card">
@@ -167,7 +171,7 @@
             <li>Post-call summary doc with concrete next steps</li>
           </ul>
           <p class="community-line">Community rate: $25 when cost is a barrier</p>
-          <a href="https://forms.gle/hcFHaVqoPvMcrN6X7" class="button full">Start with intake</a>
+          <button type="button" class="button full" data-open-intake>Get started</button>
         </article>
 
         <article class="card featured">
@@ -189,7 +193,7 @@
             <li>Follow-up doc with what to practice next</li>
           </ul>
           <p class="community-line">Community rate: $60 when cost is a barrier</p>
-          <a href="https://forms.gle/hcFHaVqoPvMcrN6X7" class="button full">Start with intake</a>
+          <button type="button" class="button full" data-open-intake>Get started</button>
         </article>
 
         <article class="card">
@@ -210,18 +214,27 @@
             <li>Summary doc after each session</li>
           </ul>
           <p class="community-line">Community rate: $85 when cost is a barrier</p>
-          <a href="https://forms.gle/hcFHaVqoPvMcrN6X7" class="button full">Start with intake</a>
+          <button type="button" class="button full" data-open-intake>Get started</button>
         </article>
+      </div>
+
+      <div class="session-finder-callout">
+        <div>
+          <p class="eyebrow">Not sure?</p>
+          <h3>Take the session finder quiz.</h3>
+          <p>Answer a few quick questions and get a suggested starting point. You will still be able to compare all options before filling out the intake form.</p>
+        </div>
+        <button type="button" class="button" data-open-quiz>Take the session finder quiz</button>
       </div>
     </section>
 
     <section id="fit-call" class="section fit-call">
       <div class="fit-call-card">
         <div>
-          <p class="eyebrow">Not sure where to start?</p>
-          <h2>The intake form can route you to a free 15-minute fit call.</h2>
+          <p class="eyebrow">Not ready to choose?</p>
+          <h2>The intake form or session finder can route you to a free 15-minute fit call.</h2>
           <p>
-            If you are interested but unsure which option makes sense, select that on the intake form.
+            If you are interested but unsure which option makes sense, choose that on the intake form or take the session finder quiz.
             If a quick conversation would be helpful, I’ll send you the fit call booking link.
           </p>
         </div>
@@ -240,7 +253,7 @@
             <li>A personalized roadmap</li>
             <li>A hands-on IT tool walkthrough</li>
           </ul>
-          <a href="https://forms.gle/hcFHaVqoPvMcrN6X7" class="button full">Request a fit call through intake</a>
+          <button type="button" class="button full" data-open-intake>Request a fit call through intake</button>
         </div>
       </div>
     </section>
@@ -361,7 +374,12 @@
 
       <details>
         <summary>Why do I need to fill out the intake form first?</summary>
-        <p>The intake form helps me understand your goals and recommend the right next step. It also helps me protect limited community-rate and pay-what-you-can spots so this work can stay both accessible and sustainable.</p>
+        <p>The intake form helps me understand your goals, prepare for the session, and send the right next step. If you are not sure which session fits, the session finder quiz can help you choose before you submit intake.</p>
+      </details>
+
+      <details>
+        <summary>Is the session finder quiz a formal assessment?</summary>
+        <p>No. It is a quick decision guide. It suggests a starting point based on your answers, but you can still choose whichever option feels best for your goals, budget, and timing.</p>
       </details>
 
       <details>
@@ -382,13 +400,13 @@
 
     <section id="book" class="section cta">
       <p class="eyebrow">Start here</p>
-      <h2>Fill out the intake form and I’ll send the right next step.</h2>
+      <h2>Ready to take the next step?</h2>
       <p>
-        After reviewing your responses, I’ll recommend the best fit and send the appropriate booking or payment link.
-        That may be a free fit call, a paid session, or the bundle.
+        Fill out the intake form if you know what you want, or take the session finder quiz if you want help choosing first.
       </p>
       <div class="hero-actions">
-        <a href="https://forms.gle/hcFHaVqoPvMcrN6X7" class="button">Complete the intake form</a>
+        <button type="button" class="button" data-open-intake>Get started</button>
+        <button type="button" class="button secondary" data-open-quiz>Take the session finder quiz</button>
       </div>
     </section>
   </main>
@@ -396,5 +414,231 @@
   <footer class="footer">
     <p>© 2026 Modern IT Pathways. Practical IT career guidance for beginners, career changers, and future IT professionals.</p>
   </footer>
+
+  <div class="modal" id="intake-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel form-modal" role="dialog" aria-modal="true" aria-labelledby="intake-title">
+      <button type="button" class="modal-close" data-close-modal aria-label="Close intake form">×</button>
+      <div class="modal-header">
+        <p class="eyebrow">Get started</p>
+        <h2 id="intake-title">Fill out the intake form.</h2>
+        <p>This form opens inside the website so you do not have to leave the page. If it does not load, use the backup link below.</p>
+      </div>
+      <div class="iframe-wrap">
+        <iframe src="https://forms.gle/hcFHaVqoPvMcrN6X7" title="Modern IT Pathways intake form">Loading…</iframe>
+      </div>
+      <p class="modal-fallback">
+        Trouble loading the form? <a href="https://forms.gle/hcFHaVqoPvMcrN6X7" target="_blank" rel="noopener">Open the intake form in a new tab</a>.
+      </p>
+    </div>
+  </div>
+
+  <div class="modal" id="quiz-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel quiz-modal" role="dialog" aria-modal="true" aria-labelledby="quiz-title">
+      <button type="button" class="modal-close" data-close-modal aria-label="Close session finder quiz">×</button>
+
+      <div class="quiz-start" data-quiz-screen="start">
+        <p class="eyebrow">Session finder</p>
+        <h2 id="quiz-title">Not sure which session fits?</h2>
+        <p>Answer a few quick questions and get a suggested starting point. This is a guide, not a rule. You can still choose the option that feels best for your goals, budget, and timing.</p>
+        <button type="button" class="button" data-start-quiz>Start quiz</button>
+      </div>
+
+      <form class="quiz-form hidden" data-quiz-screen="questions">
+        <p class="eyebrow">Session finder</p>
+        <h2>Choose the answers that sound most like you.</h2>
+
+        <fieldset class="quiz-question">
+          <legend>1. Where are you right now?</legend>
+          <label><input type="radio" name="q1" value="clarity" required> I want to get into IT, but I do not know where to start.</label>
+          <label><input type="radio" name="q1" value="starter"> I know I want IT, but I do not understand what the work actually looks like.</label>
+          <label><input type="radio" name="q1" value="bundle"> I need both career direction and hands-on exposure.</label>
+          <label><input type="radio" name="q1" value="fit"> I am interested, but I am not sure what I need yet.</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>2. What would feel most helpful right now?</legend>
+          <label><input type="radio" name="q2" value="clarity" required> A clear roadmap and realistic next steps.</label>
+          <label><input type="radio" name="q2" value="starter"> A practical walkthrough of tools, tickets, and IT workflows.</label>
+          <label><input type="radio" name="q2" value="bundle"> Both a roadmap and a practical walkthrough.</label>
+          <label><input type="radio" name="q2" value="fit"> A quick conversation before deciding.</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>3. How confident are you about which IT roles to apply for?</legend>
+          <label><input type="radio" name="q3" value="clarity" required> Not confident. I need help choosing a direction.</label>
+          <label><input type="radio" name="q3" value="bundle"> Somewhat confident, but I still need help connecting the dots.</label>
+          <label><input type="radio" name="q3" value="starter"> Pretty confident. I mostly want to understand the work better.</label>
+          <label><input type="radio" name="q3" value="fit"> I am not sure IT is the right fit yet.</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>4. How familiar are you with Jira, Okta, Google Workspace, Slack, or ticket queues?</legend>
+          <label><input type="radio" name="q4" value="clarity" required> Not familiar, and I may need career direction first.</label>
+          <label><input type="radio" name="q4" value="starter"> I have heard of them, but I want to see how they show up in IT work.</label>
+          <label><input type="radio" name="q4" value="starter"> Somewhat familiar, and I want more practical examples.</label>
+          <label><input type="radio" name="q4" value="bundle"> I want both tool exposure and help understanding how it fits into a career path.</label>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>5. What is your biggest priority?</legend>
+          <label><input type="radio" name="q5" value="clarity" required> Choosing the right starting path.</label>
+          <label><input type="radio" name="q5" value="starter"> Understanding day-to-day IT work.</label>
+          <label><input type="radio" name="q5" value="bundle"> Getting the most complete beginner support.</label>
+          <label><input type="radio" name="q5" value="clarity"> Keeping the first step affordable.</label>
+        </fieldset>
+
+        <div class="quiz-actions">
+          <button type="button" class="button secondary" data-reset-quiz>Start over</button>
+          <button type="submit" class="button">See my suggestion</button>
+        </div>
+      </form>
+
+      <div class="quiz-result hidden" data-quiz-screen="result" aria-live="polite">
+        <p class="eyebrow">Suggested starting point</p>
+        <h2 data-result-title>Your best fit may be...</h2>
+        <p data-result-copy></p>
+        <div class="result-details" data-result-details></div>
+        <div class="result-actions">
+          <button type="button" class="button" data-open-intake>Get started</button>
+          <a href="#services" class="button secondary" data-close-modal>View all session options</a>
+          <button type="button" class="button ghost" data-reset-quiz>Retake quiz</button>
+        </div>
+        <p class="small-note">When you fill out the intake form, you can mention the quiz result if you want. You can still choose a different option.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const modals = document.querySelectorAll('.modal');
+    const intakeModal = document.getElementById('intake-modal');
+    const quizModal = document.getElementById('quiz-modal');
+    const openIntakeButtons = document.querySelectorAll('[data-open-intake]');
+    const openQuizButtons = document.querySelectorAll('[data-open-quiz]');
+    const closeButtons = document.querySelectorAll('[data-close-modal]');
+    const quizStart = document.querySelector('[data-quiz-screen="start"]');
+    const quizQuestions = document.querySelector('[data-quiz-screen="questions"]');
+    const quizResult = document.querySelector('[data-quiz-screen="result"]');
+    const quizForm = document.querySelector('.quiz-form');
+    const resultTitle = document.querySelector('[data-result-title]');
+    const resultCopy = document.querySelector('[data-result-copy]');
+    const resultDetails = document.querySelector('[data-result-details]');
+
+    const resultContent = {
+      clarity: {
+        title: 'Your best fit may be: Career Clarity Session',
+        copy: 'This is a good fit if you want to get into IT but feel unsure where to start. We focus on your background, realistic role targets, transferable skills, and next steps.',
+        details: '<strong>Best for:</strong> career changers, beginners who feel overwhelmed, people unsure which IT roles to target, and people deciding whether certs or training make sense.<br><strong>Length:</strong> 50 minutes<br><strong>Rate:</strong> $50 standard / $25 community'
+      },
+      starter: {
+        title: 'Your best fit may be: Modern IT Starter Session',
+        copy: 'This is a good fit if you want a beginner-friendly walkthrough of what modern IT work actually looks like, including tickets, access requests, troubleshooting, documentation, and common tools.',
+        details: '<strong>Best for:</strong> people who already know they want IT, people preparing for help desk or junior IT interviews, and people who learn better by seeing examples.<br><strong>Length:</strong> 90 minutes<br><strong>Rate:</strong> $100 standard / $60 community'
+      },
+      bundle: {
+        title: 'Your best fit may be: Career + Crash Course Bundle',
+        copy: 'This is a good fit if you want both career direction and practical exposure. The first session focuses on your IT path, and the second walks through real modern IT workflows.',
+        details: '<strong>Best for:</strong> career changers who want the most complete support, beginners who need both direction and hands-on exposure, and people who want more than one touchpoint.<br><strong>Includes:</strong> 2 sessions<br><strong>Rate:</strong> $125 standard / $85 community'
+      },
+      fit: {
+        title: 'Your best fit may be: Free 15-minute fit call',
+        copy: 'This is a good fit if you are interested but not ready to choose. A quick fit call can help you decide whether Career Clarity, Modern IT Starter, or the Bundle makes the most sense.',
+        details: '<strong>Best for:</strong> people unsure which option to choose, people with a specific question before booking, or people who are not sure this support fits their goals.<br><strong>Length:</strong> 15 minutes<br><strong>Cost:</strong> Free'
+      }
+    };
+
+    function openModal(modal) {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+      const firstFocusable = modal.querySelector('button, a, input, iframe');
+      if (firstFocusable) firstFocusable.focus();
+    }
+
+    function closeModal(modal) {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+    }
+
+    function closeAllModals() {
+      modals.forEach(closeModal);
+    }
+
+    function showQuizStart() {
+      quizStart.classList.remove('hidden');
+      quizQuestions.classList.add('hidden');
+      quizResult.classList.add('hidden');
+      if (quizForm) quizForm.reset();
+    }
+
+    function showQuizQuestions() {
+      quizStart.classList.add('hidden');
+      quizQuestions.classList.remove('hidden');
+      quizResult.classList.add('hidden');
+    }
+
+    function showQuizResult(resultKey) {
+      const content = resultContent[resultKey] || resultContent.clarity;
+      resultTitle.textContent = content.title;
+      resultCopy.textContent = content.copy;
+      resultDetails.innerHTML = content.details;
+      quizStart.classList.add('hidden');
+      quizQuestions.classList.add('hidden');
+      quizResult.classList.remove('hidden');
+    }
+
+    function calculateResult(formData) {
+      const scores = { clarity: 0, starter: 0, bundle: 0, fit: 0 };
+      for (const value of formData.values()) {
+        if (scores[value] !== undefined) scores[value] += 1;
+      }
+      if (scores.fit >= 2) return 'fit';
+      return Object.keys(scores).reduce((top, key) => scores[key] > scores[top] ? key : top, 'clarity');
+    }
+
+    openIntakeButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        closeAllModals();
+        openModal(intakeModal);
+      });
+    });
+
+    openQuizButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        showQuizStart();
+        openModal(quizModal);
+      });
+    });
+
+    closeButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        if (modal) closeModal(modal);
+      });
+    });
+
+    document.querySelectorAll('[data-start-quiz]').forEach((button) => {
+      button.addEventListener('click', showQuizQuestions);
+    });
+
+    document.querySelectorAll('[data-reset-quiz]').forEach((button) => {
+      button.addEventListener('click', showQuizStart);
+    });
+
+    if (quizForm) {
+      quizForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formData = new FormData(quizForm);
+        const resultKey = calculateResult(formData);
+        showQuizResult(resultKey);
+      });
+    }
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeAllModals();
+    });
+  </script>
 </body>
 </html>
