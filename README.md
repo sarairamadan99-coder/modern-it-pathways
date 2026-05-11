@@ -1,6 +1,6 @@
 # Modern IT Pathways Website
 
-Updated static landing page with an intake-first flow.
+Updated static landing page with an intake-first flow and About section.
 
 ## Main flow
 
@@ -18,11 +18,18 @@ Recommendation: keep Calendly links mostly private for now. Use the intake form 
 
 ## What's changed
 
-- The intake form is now the primary CTA across the website.
-- The free fit call is framed as something someone can request through the intake form.
+- Added an About me section with credibility and personal why.
+- Added About to the top navigation.
+- The intake form remains the primary CTA across the website.
+- The free fit call is framed as something someone can request through intake.
 - Session cards link to the intake form instead of direct booking.
-- Added a dedicated “How to start” section explaining the flow.
-- Updated FAQ to explain why intake comes first.
+- The FAQ explains why intake comes first.
+
+## Files to upload to GitHub
+
+- index.html
+- styles.css
+- README.md
 
 ## How to preview
 
@@ -30,4 +37,4 @@ Open `index.html` in your browser.
 
 ## How to deploy
 
-Upload the folder to Netlify, Cloudflare Pages, GitHub Pages, or any static hosting service.
+Upload or replace these files in your GitHub repo. Cloudflare Pages should automatically redeploy after the commit.
