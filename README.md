@@ -1,10 +1,12 @@
 # Modern IT Pathways Website
 
-Updated static landing page with a client-choice flow, embedded session finder quiz modal, and embedded intake form modal.
+Static website for Modern IT Pathways, now positioned as practical modern IT guidance for both individuals and growing teams.
+
+The site keeps the individual coaching flow, embedded session finder quiz modal, and embedded intake form modal, while adding a consulting path for teams that need lightweight IT operations workflow support.
 
 ## Main flow
 
-Website → View options or take session finder quiz → Get started → Intake form → Review responses → Send the right payment/scheduling or fit call link
+Website → Choose coaching or consulting → Get started → Intake form → Review responses → Send the right payment/scheduling, fit call, or consulting next step
 
 ## Active intake form
 
@@ -18,8 +20,13 @@ Recommendation: keep Calendly links mostly private for now. Use the intake form 
 
 ## What's changed
 
+- Updated the homepage hero and SEO metadata for both individual coaching and team consulting.
+- Added a two-path “For individuals” / “For teams” section near the top of the homepage.
+- Added a dedicated consulting section for growing teams, including common needs, signs, pilot offer details, fit, and CTA.
+- Clarified that coaching options, pricing, session finder, and community-rate language apply to individual coaching.
+- Updated the About copy to connect the coaching and consulting sides of the work.
 - Changed the top navigation CTA from “Start with intake” to “Get started”.
-- Updated the hero CTA buttons to “Get started,” “View session options,” and “Take the session finder quiz”.
+- Updated the hero CTA buttons to “Get started,” “Explore coaching,” “Explore consulting,” and “Take the session finder quiz”.
 - Reworked the “How to start” section so clients can compare options, use the quiz, then complete intake.
 - Added a built-in session finder quiz as a website pop-up/modal.
 - Added a built-in intake form pop-up/modal using an embedded Google Form.
