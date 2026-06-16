@@ -518,11 +518,12 @@ h3 {
 }
 
 .cards.three {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
 }
 
 .card {
   position: relative;
+  min-width: 0;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 28px;
@@ -548,15 +549,22 @@ h3 {
 
 .card-top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 16px;
+  align-items: flex-start;
+  gap: 8px 16px;
+}
+
+.card-top h3 {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .price {
-  white-space: nowrap;
   font-weight: 900;
   color: var(--accent);
   font-size: 1.15rem;
+  overflow-wrap: anywhere;
 }
 
 .duration {
@@ -1079,7 +1087,6 @@ li {
 }
 
 @media (max-width: 980px) {
-  .cards.three,
   .path-grid,
   .resource-grid,
   .guide-checklist,
