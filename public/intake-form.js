@@ -17,15 +17,17 @@ function validateIntakeForm(form) {
     form.querySelector('[name="name"]'),
     form.querySelector('[name="email"]'),
     form.querySelector('[name="support_type"]'),
+    form.querySelector('[name="journey_stage"]'),
     form.querySelector('[name="help_message"]')
   ];
 
   fields.forEach((field) => field?.setAttribute('aria-invalid', 'false'));
 
-  const [name, email, supportType, helpMessage] = fields;
+  const [name, email, supportType, journeyStage, helpMessage] = fields;
   if (!name.value.trim()) return name;
   if (!email.value.trim() || !isValidEmail(email.value.trim())) return email;
   if (!supportType.value) return supportType;
+  if (!journeyStage.value) return journeyStage;
   if (!helpMessage.value.trim()) return helpMessage;
   return null;
 }
