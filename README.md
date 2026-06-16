@@ -11,7 +11,8 @@ Static website for Modern IT Pathways, structured around two clear audiences:
 - `coaching.html` contains individual coaching copy, coaching options, pricing, community-rate/pay-what-you-can language, the session finder quiz, and the native get started form.
 - `intake-form.js` handles native form validation, Formspree submission, and the redirect to Calendly after a successful submission.
 - `consulting.html` contains team-focused consulting copy for onboarding/offboarding, access management, SaaS admin workflows, documentation, automation opportunities, vendor cleanup, and practical security-minded IT operations.
-- `resources.html` contains starter guide cards.
+- `resources.html` contains the IT Resources landing page.
+- `resources/where-do-i-start.html`, `resources/ticket-intake.html`, `resources/basic-tooling.html`, and `resources/user-lifecycle-onboarding.html` contain beginner-friendly static resource guides.
 - `resources/onboarding-cleanup.html` is the first full guide.
 
 ## Main flow
