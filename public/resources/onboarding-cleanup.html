@@ -7,12 +7,18 @@
   <meta name="description" content="A practical guide to cleaning up onboarding when your IT team is overwhelmed, including documentation, access, automation, and when to bring in outside help." />
   <link rel="stylesheet" href="/styles.css" />
   <script src="/intake-form.js" defer></script>
+  <script src="/site-nav.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav">
+    <nav class="nav" data-site-nav>
       <a href="/" class="logo">Modern IT Pathways</a>
-      <div class="nav-links">
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" data-nav-links>
         <a href="/">Home</a>
         <a href="/coaching">Coaching</a>
         <a href="/consulting">Consulting</a>
