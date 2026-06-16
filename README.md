@@ -8,7 +8,7 @@ Static website for Modern IT Pathways, structured around two clear audiences:
 ## Site structure
 
 - `index.html` is the high-level homepage and chooser page.
-- `coaching.html` contains individual coaching copy, coaching options, pricing, community-rate/pay-what-you-can language, the session finder quiz, and the native get started form.
+- `coaching.html` contains individual coaching copy, flexible starting-point pricing, community-rate language, the session finder quiz, and the native get started form.
 - `intake-form.js` handles native form validation, Formspree submission, and the redirect to Calendly after a successful submission.
 - `consulting.html` contains team-focused consulting copy for onboarding/offboarding, access management, SaaS admin workflows, documentation, automation opportunities, vendor cleanup, and practical security-minded IT operations.
 - `resources.html` contains the IT Resources landing page.
