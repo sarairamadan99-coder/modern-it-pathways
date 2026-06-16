@@ -8,7 +8,8 @@ Static website for Modern IT Pathways, structured around two clear audiences:
 ## Site structure
 
 - `index.html` is the high-level homepage and chooser page.
-- `coaching.html` contains individual coaching copy, session options, pricing, community-rate/pay-what-you-can language, the session finder quiz, and the embedded Start Here form.
+- `coaching.html` contains individual coaching copy, coaching options, pricing, community-rate/pay-what-you-can language, the session finder quiz, and the native get started form.
+- `intake-form.js` handles native form validation, Formspree submission, and the redirect to Calendly after a successful submission.
 - `consulting.html` contains team-focused consulting copy for onboarding/offboarding, access management, SaaS admin workflows, documentation, automation opportunities, vendor cleanup, and practical security-minded IT operations.
 - `resources.html` contains starter guide cards.
 - `resources/onboarding-cleanup.html` is the first full guide.
@@ -17,19 +18,25 @@ Static website for Modern IT Pathways, structured around two clear audiences:
 
 Home → Choose coaching or consulting → Dedicated page → Correct CTA
 
-Coaching visitors use the embedded Start Here form, the Modern IT Pathways Intro Call link, and the session finder quiz.
+Coaching visitors use the native get started form and the session finder quiz.
 
-Consulting visitors use the same Start Here form and Modern IT Pathways Intro Call as the inquiry front door.
+Consulting visitors use the same short form as the front door.
 
-## Active Start Here form
+## Form submission setup
 
-https://docs.google.com/forms/d/e/1FAIpQLSfjygTfgEM2T8TaDteXMgJf3JnqYD5T2lOZTsvTC9BYNFn6yA/viewform
+This static site uses Formspree for native form submissions. Create a Formspree form that delivers responses to the desired email address, then replace the placeholder endpoint in `intake-form.js`:
+
+```js
+const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+```
+
+The Formspree endpoint is not a private key. Do not add private API keys to frontend code.
 
 ## Calendly
 
 https://calendly.com/sarairamadan/modern-it-pathways-intro-call
 
-Visitors are directed to fill out the short Start Here form, then schedule the Modern IT Pathways Intro Call.
+After a successful form submission, visitors are redirected to the Modern IT Pathways Intro Call.
 
 ## How to preview
 
