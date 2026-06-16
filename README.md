@@ -23,15 +23,15 @@ Coaching visitors use the native get started form and the session finder quiz.
 
 Consulting visitors use the same short form as the front door.
 
-## Form submission setup
+## Form submission
 
-This static site uses Formspree for native form submissions. Create a Formspree form that delivers responses to the desired email address, then replace the placeholder endpoint in `intake-form.js`:
+This static site uses Formspree for native form submissions. The current endpoint is configured in `intake-form.js`:
 
 ```js
-const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORM_ENDPOINT = 'https://formspree.io/f/xbdewnkk';
 ```
 
-The Formspree endpoint is not a private key. Do not add private API keys to frontend code.
+Responses are delivered and viewable through the Formspree form dashboard. The Formspree endpoint is not a private key. Do not add private API keys to frontend code.
 
 ## Calendly
 
