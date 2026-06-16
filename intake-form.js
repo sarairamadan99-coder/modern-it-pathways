@@ -34,7 +34,7 @@ function validateIntakeForm(form) {
 
 document.querySelectorAll('[data-intake-form]').forEach((form) => {
   const submitButton = form.querySelector('button[type="submit"]');
-  const defaultButtonText = submitButton?.textContent || 'Continue to Scheduling';
+  const defaultButtonText = submitButton?.textContent || 'Get Started';
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
