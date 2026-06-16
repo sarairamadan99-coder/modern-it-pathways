@@ -8,26 +8,28 @@ Static website for Modern IT Pathways, structured around two clear audiences:
 ## Site structure
 
 - `index.html` is the high-level homepage and chooser page.
-- `coaching.html` contains individual coaching copy, session options, pricing, community-rate/pay-what-you-can language, the session finder quiz, and the coaching intake form.
+- `coaching.html` contains individual coaching copy, coaching options, pricing, community-rate/pay-what-you-can language, the session finder quiz, and the embedded get started form.
 - `consulting.html` contains team-focused consulting copy for onboarding/offboarding, access management, SaaS admin workflows, documentation, automation opportunities, vendor cleanup, and practical security-minded IT operations.
+- `resources.html` contains starter guide cards.
+- `resources/onboarding-cleanup.html` is the first full guide.
 
 ## Main flow
 
 Home → Choose coaching or consulting → Dedicated page → Correct CTA
 
-Coaching visitors use the embedded intake form and session finder quiz.
+Coaching visitors use the embedded get started form, the Modern IT Pathways Intro Call link, and the session finder quiz.
 
-Consulting visitors use the same intake form as the inquiry front door.
+Consulting visitors use the same short form and Modern IT Pathways Intro Call as the front door.
 
-## Active intake form
+## Active form
 
-https://forms.gle/hcFHaVqoPvMcrN6X7
+https://docs.google.com/forms/d/e/1FAIpQLSfjygTfgEM2T8TaDteXMgJf3JnqYD5T2lOZTsvTC9BYNFn6yA/viewform
 
 ## Calendly
 
-https://calendly.com/sarairamadan/itmentorship
+https://calendly.com/sarairamadan/modern-it-pathways-intro-call
 
-Recommendation: keep Calendly links mostly private for now. Use the intake form as the public front door, then send the right booking link after reviewing the person's responses.
+Visitors are directed to click Get Started, fill out the short form, then schedule the Modern IT Pathways Intro Call.
 
 ## How to preview
 
