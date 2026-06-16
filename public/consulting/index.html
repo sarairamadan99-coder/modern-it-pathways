@@ -6,6 +6,7 @@
   <title>Consulting | Modern IT Pathways</title>
   <meta name="description" content="Lightweight IT operations consulting for startups, small companies, and growing teams improving onboarding, access, documentation, and SaaS workflows." />
   <link rel="stylesheet" href="/styles.css" />
+  <script src="/intake-form.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -145,21 +146,30 @@
         The form is intentionally short. We will talk through the details together and decide whether
         consulting, coaching, or another next step makes sense.
       </p>
-      <div class="inline-form-wrap">
-        <iframe
-          class="form-embed"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfjygTfgEM2T8TaDteXMgJf3JnqYD5T2lOZTsvTC9BYNFn6yA/viewform?embedded=true"
-          width="640"
-          height="1265"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          title="Modern IT Pathways get started form"
-          loading="lazy">Loading...</iframe>
-      </div>
-      <div class="hero-actions form-actions">
-        <a href="https://calendly.com/sarairamadan/modern-it-pathways-intro-call" target="_blank" rel="noopener" class="button">After submitting the form, schedule your Modern IT Pathways Intro Call</a>
-      </div>
+      <form class="native-intake-form" data-intake-form novalidate>
+        <div class="form-field">
+          <label for="consulting-name">Name <span class="required-note">Required</span></label>
+          <input id="consulting-name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="form-field">
+          <label for="consulting-email">Email <span class="required-note">Required</span></label>
+          <input id="consulting-email" name="email" type="email" autocomplete="email" required />
+        </div>
+        <fieldset class="form-field form-options">
+          <legend>What are you looking for support with? <span class="required-note">Required</span></legend>
+          <label><input type="radio" name="support_type" value="Career coaching / breaking into IT" required /> Career coaching / breaking into IT</label>
+          <label><input type="radio" name="support_type" value="Hands-on IT skill-building" /> Hands-on IT skill-building</label>
+          <label><input type="radio" name="support_type" value="Small business / team IT consulting" /> Small business / team IT consulting</label>
+          <label><input type="radio" name="support_type" value="Not sure yet" /> Not sure yet</label>
+        </fieldset>
+        <div class="form-field">
+          <label for="consulting-help">What would you like help with most right now? <span class="required-note">Required</span></label>
+          <textarea id="consulting-help" name="help_message" required placeholder="Figuring out what roles to apply for, understanding modern IT tools, improving onboarding/offboarding, cleaning up access processes..."></textarea>
+        </div>
+        <p class="form-helper">After you submit the form, you will be taken to my calendar to schedule a short intro call.</p>
+        <button type="submit" class="button full">Continue to Scheduling</button>
+        <p class="form-status" data-form-status aria-live="polite"></p>
+      </form>
     </section>
   </main>
 
